@@ -14,12 +14,10 @@ namespace Sistema
         {
 
         }
+
         protected void LoginButton_Click(object sender, EventArgs e)
         {
-            if (txtPassword.Text != "" && txtUserName.Text != "")
-            {
-                Response.Redirect("~/default.aspx");
-            }
+            Response.Redirect("~/default.aspx");
         }
     }
 }
