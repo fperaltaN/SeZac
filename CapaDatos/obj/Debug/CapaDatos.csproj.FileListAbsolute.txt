@@ -1,0 +1,18 @@
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Neoteck8229\Downloads\Sistema\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Neoteck8229\Downloads\Sistema\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Neoteck8229\Downloads\Sistema\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Neoteck8229\Downloads\Sistema\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Neoteck8229\Downloads\Sistema\CapaDatos\obj\Debug\CapaDatos.pdb
+H:\gil\Sistema\CapaDatos\bin\Debug\CapaDatos.dll
+H:\gil\Sistema\CapaDatos\bin\Debug\CapaDatos.pdb
+H:\gil\Sistema\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+H:\gil\Sistema\CapaDatos\obj\Debug\CapaDatos.dll
+H:\gil\Sistema\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\User\Desktop\SistemaSezac\SeZac\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\User\Desktop\SistemaSezac\SeZac\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\CapaDatos\obj\Debug\CapaDatos.pdb

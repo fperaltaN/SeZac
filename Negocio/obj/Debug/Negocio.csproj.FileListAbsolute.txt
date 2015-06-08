@@ -1,0 +1,28 @@
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\Negocio\bin\Debug\Negocio.dll
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\Negocio\bin\Debug\CapaDatos.dll
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\Negocio\bin\Debug\CapaDatos.pdb
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\Negocio\obj\Debug\Negocio.dll
+C:\Users\Adman\documents\visual studio 2012\Projects\Sistema\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Neoteck8229\Downloads\Sistema\Negocio\bin\Debug\Negocio.dll
+C:\Users\Neoteck8229\Downloads\Sistema\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Neoteck8229\Downloads\Sistema\Negocio\bin\Debug\CapaDatos.dll
+C:\Users\Neoteck8229\Downloads\Sistema\Negocio\bin\Debug\CapaDatos.pdb
+C:\Users\Neoteck8229\Downloads\Sistema\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Neoteck8229\Downloads\Sistema\Negocio\obj\Debug\Negocio.dll
+C:\Users\Neoteck8229\Downloads\Sistema\Negocio\obj\Debug\Negocio.pdb
+H:\gil\Sistema\Negocio\bin\Debug\Negocio.dll
+H:\gil\Sistema\Negocio\bin\Debug\Negocio.pdb
+H:\gil\Sistema\Negocio\bin\Debug\CapaDatos.dll
+H:\gil\Sistema\Negocio\bin\Debug\CapaDatos.pdb
+H:\gil\Sistema\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+H:\gil\Sistema\Negocio\obj\Debug\Negocio.dll
+H:\gil\Sistema\Negocio\obj\Debug\Negocio.pdb
+C:\Users\User\Desktop\SistemaSezac\SeZac\Negocio\bin\Debug\Negocio.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\Negocio\bin\Debug\Negocio.pdb
+C:\Users\User\Desktop\SistemaSezac\SeZac\Negocio\bin\Debug\CapaDatos.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\Negocio\bin\Debug\CapaDatos.pdb
+C:\Users\User\Desktop\SistemaSezac\SeZac\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\SistemaSezac\SeZac\Negocio\obj\Debug\Negocio.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\Negocio\obj\Debug\Negocio.pdb

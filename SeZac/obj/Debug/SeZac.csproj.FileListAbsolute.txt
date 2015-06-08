@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\bin\SeZac.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\bin\SeZac.pdb
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\bin\CapaDatos.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\bin\Negocio.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\bin\CapaDatos.pdb
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\bin\Negocio.pdb
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\obj\Debug\SeZac.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\obj\Debug\SeZac.dll.licenses
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\obj\Debug\SeZac.dll
+C:\Users\User\Desktop\SistemaSezac\SeZac\SeZac\obj\Debug\SeZac.pdb

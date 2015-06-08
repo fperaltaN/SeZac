@@ -1,0 +1,245 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="Sistema.MasterPage.MasterPage" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web" TagPrefix="dx" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-image: url('http://localhost:14967/Image/red_wall.jpg')">
+<head runat="server">
+    <title>Sistema de Control Administrativo</title>
+    <link href="../Css/style.css" rel="stylesheet" />
+    <link href="../Css/mys09.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <style type="text/css">
+        @font-face
+        {
+            font-family: "newttf";
+            src: url( "../Estilos/ttf/Rosewood.ttf" );
+        }
+        
+        @font-face
+        {
+            font-family: "known";
+            src: url( "../Estilos/ttf/annone.ttf" );
+        }
+        .style1
+        {
+            width: 256px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $('#detalles_not').hide();
+            $('#notificaciones_box').click(function () {
+                $('#detalles_not').toggle();
+            });
+            $("#notificaciones_box ul").append("<li>Nueva notificación</li>");
+            GetDetalle();
+        });
+
+        function GetDetalle() {
+            $.ajax({
+                type: "POST",
+                url: "notificaciones.asmx/GetNotificaciones",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    alert(response.d);
+                    var contenido = response.d;
+                    $("#notificaciones_box ul").append(contenido);
+                }
+            });
+        };
+
+
+        $("document").ready(function () {
+            $("#slogan").fadeOut("fast");
+            $("#slogan").fadeIn(4000, function () {
+                $("#slogan").css("background-color", "rgba(242,236,182,0.5)");
+            });
+        });
+
+
+        //RUN AT SERVER
+        function mueveReloj() {
+            var fechaHora = new Date();
+            var horas = fechaHora.getHours();
+            var minutos = fechaHora.getMinutes();
+            var segundos = fechaHora.getSeconds();
+
+            var sufijo = ' am';
+            if (horas > 12) {
+                horas = horas - 12;
+                sufijo = ' pm';
+            }
+
+            if (horas < 10) { horas = '0' + horas; }
+            if (minutos < 10) { minutos = '0' + minutos; }
+            if (segundos < 10) { segundos = '0' + segundos; }
+
+            document.getElementById("reloj").innerHTML = horas + ':' + minutos + ':' + segundos + sufijo;
+            setTimeout("mueveReloj()", 1000)
+        }
+    </script>
+</head>
+<body onload="mueveReloj()">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div style="position: absolute; top: 1px; background-color: rgba(120,120,120, 0.5);
+        width: 100%; height: 61px;">
+        <div style="position: relative; text-align: left; top: 0px; left: 0px;">
+            <asp:Label ID="lblFecha" runat="server" Text="Fecha:" Font-Size="Small" ForeColor="#333333"
+                Font-Bold="True"></asp:Label>
+            <asp:Label ID="lblFechaToday" runat="server" Font-Size="Small" ForeColor="#666666"></asp:Label>
+        </div>
+        <div id="ContenedorRELOJ" style="float: right">
+            <b>
+                <label style="color: #333333">
+                    Hora:</label>
+                &nbsp;
+                <label id="reloj" style="color: #666666">
+                </label>
+            </b>
+        </div>
+        <table border="0" class="BodyContent" style="text-align: right">
+            <tr>
+                <td colspan="2">
+                    <asp:Label ID="Label1" runat="server" Text="Bienvenid@:" Font-Size="Medium" ForeColor="#333333"
+                        Font-Bold="True"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="Usuario" Font-Size="Medium" ForeColor="#666666"
+                        Font-Bold="True"></asp:Label>
+                    <br />
+                    <div style="position: relative; top: 0px; left: 0px;" align="right">
+                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" ForeColor="#333333"
+                            NavigateUrl="~/Login.aspx" Font-Size="X-Small" Font-Underline="True">[Cerrar Session]</asp:HyperLink>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="left">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: left; width: 100px; height: 524px; position: absolute; top: 222px;
+        
+        left: 0px;">
+    </div>
+    <table style="width: 100%; background-image: url('http://localhost:14967/Image/bg-slider.jpg');
+        height: 225px;">
+        <tr>
+            <td>
+                <table style="width: 100%;">
+                    <tr>
+                        <td colspan="2">
+                            &nbsp; &nbsp;
+                            <img style="position: absolute; top: 65px; left: 1px; font-family: fantasy; font-size: 25pt;"
+                                alt="" class="style1" src="http://localhost:2792/Image/SeZac2.png" />
+                            <div>
+                                <h1 id="H1" style="position: absolute; top: 0px; left: 160px; font-family: fantasy;
+                                    font-size: 25pt; color: #666666;">
+                                    Sistema de Control de Beneficiarios
+                                </h1>
+                                <br />
+                            </div>
+                        </td>
+                        <td rowspan="2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right">
+                            &nbsp;
+                            <h2 id="slo" style="font-size: medium; width: 775px; color: #666666;">
+                                Secretaria de Economia de Estado de Zacatecas</h2>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <dx:ASPxMenu ID="ASPxMenu" runat="server" Theme="iOS" Style="position: absolute;
+                    top: 100px; left: 430px;">
+                    <Items>
+                        <dx:MenuItem Text="Inicio">
+                            <Items>
+                                <dx:MenuItem Text="Secretaría de Economía">
+                                    <Items>
+                                        <dx:MenuItem Text="Delegación Zacatecas (SeZac)">
+                                        </dx:MenuItem>
+                                    </Items>
+                                </dx:MenuItem>
+                            </Items>
+                        </dx:MenuItem>
+                        <dx:MenuItem Text="Dependencias">
+                            <Items>
+                                <dx:MenuItem Text="Minería">
+                                </dx:MenuItem>
+                                <dx:MenuItem Text="Externos">
+                                </dx:MenuItem>
+                                <dx:MenuItem Text="Ciencía y Tecnologia">
+                                </dx:MenuItem>
+                            </Items>
+                        </dx:MenuItem>
+                        <dx:MenuItem Text="Años Fiscales">
+                            <Items>
+                                <dx:MenuItem Text="2014">
+                                </dx:MenuItem>
+                                <dx:MenuItem Text="2015">
+                                </dx:MenuItem>
+                                <dx:MenuItem Text="2016">
+                                </dx:MenuItem>
+                            </Items>
+                        </dx:MenuItem>
+                        <dx:MenuItem Text="Ayuda">
+                            <Items>
+                                <dx:MenuItem Text="Acerca de">
+                                </dx:MenuItem>
+                                <dx:MenuItem Text="Ayuda">
+                                </dx:MenuItem>
+                            </Items>
+                        </dx:MenuItem>
+                    </Items>
+                </dx:ASPxMenu>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #E4E4E4">
+                <div style="text-align: left; width: 90%; height: 422px; position: absolute; top: 225px;
+                    left: 105px;">
+                    <asp:ContentPlaceHolder ID="Body" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="text-align: center; width: 100%; height: 40px; position: absolute; top: 750px;">
+                    <br />
+                    <img alt="https://www.facebook.com/SE.Economia" src="../Image/ft_facebook.png" width="35px" />&nbsp;
+                    <img alt="https://plus.google.com/+secretariadeeconomia/posts" src="../Image/ft_googleplus.png" width="35px" />
+                    <img alt="https://twitter.com/SE_mx" src="../Image/ft_twitter.png" width="35px" />&nbsp;
+                    <img alt="https://vine.co/SEMX" src="../Image/ft_vine.png" width="35px" />
+                    <img alt="https://www.youtube.com/user/seconomiamexico" src="../Image/ft_youtube.png" width="35px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblNewSystems" runat="server" CssClass="footer" Text="Copyright © Derechos Reservados 2015  Secretaria de Economia"
+                        Font-Bold="True" Font-Size="Smaller" ForeColor="#000"></asp:Label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
