@@ -88,6 +88,7 @@
                   </div>
                </header>
                 <div class="small-12 medium-6 large-6 columns separa_v">
+
                     <input type="text" class="large-12.columns" id="lg-curp" name="lg-curp" onkeyup="this.value=this.value.toUpperCase();"
                         maxlength="18" placeholder="CURP">
                 </div>
